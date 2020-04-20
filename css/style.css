@@ -140,17 +140,18 @@ p {
 }
 .container-two__item {
   width: 32%;
+  transition: 0.5s ease-in-out;
 }
 .container-two__item img {
   max-width: 100%;
   width: 100%;
-  transition: 0.5s;
+  height: 100%;
 }
-.container-two__item img:hover {
-    box-shadow:
-      10px 10px #95e1d3;
+.container-two__item:hover {
+    box-shadow:10px 10px #95e1d3;
     -webkit-transform: translateX(-7px);
     transform: translateX(-7px);
+    opacity: 1;
 }
 .container-three {
   background-color: #95e1d3;
@@ -170,6 +171,7 @@ p {
 }
 h5 {
   font-size: 14px;
+  line-height: 14px;
   font-weight: normal;
 }
 .container-four {
@@ -188,6 +190,9 @@ h5 {
 }
 .advantage {
   border-bottom: 1px solid #e5e5e5;
+}
+.container-four__advantages h5 {
+  margin-bottom: 20px;
 }
 .container-four img {
   width: 32px;
