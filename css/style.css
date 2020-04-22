@@ -148,7 +148,7 @@ p {
   justify-content: space-between;
   margin-top: 100px;
 }
-.container-two__item, .container-eight__item {
+.container-two__item, .container-eight__inner {
   flex-basis: 32%;
   transition: 0.5s ease-in-out;
   text-align: center;
@@ -174,7 +174,7 @@ p {
   top: 39%;
   left: 31%;
 }
-.container-two__hover-img, .container-eight__hover-img {
+.container-two__hover-img {
   width: 32px;
   height: 32px;
 }
@@ -257,6 +257,34 @@ p {
   margin-left: -167px;
 }
 /* container-five */
+.container-eight__item {
+  transition: 0.5s ease-in-out;
+}
+.container-eight__hover-content {
+  width: 58.3%;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  top: 44%;
+  left: 21%;
+}
+.container-eight__hover-content div {
+  background-color: #fce38a;
+  padding: 21% 0;
+  font-size: 26px;
+  color: #f38181;
+  transition: 0.5s ease-in-out;
+}
+.container-eight__hover-content div:hover {
+  background-color: #f38181;
+  color: #fff;
+}
+.container-eight__inner h5 {
+  margin-top: 30px;
+}
+.container-eight__inner p {
+  margin-top: 15px;
+}
 @media (min-height: 1000px) {
   .container-one__content h2 {
     padding-top: 130px;
@@ -267,8 +295,11 @@ p {
   .container-one__content h1 {
     width: 90%;
   }
-  .container-two__item, .container-eight__item {
+  .container-two__item, .container-eight__inner {
     width: 31%;
+  }
+  .container-eight__hover-content div {
+
   }
 }
 
@@ -285,11 +316,11 @@ p {
   .container-two__cards, .container-eight__cards {
     flex-wrap: wrap;
   }
-  .container-two__item, .container-eight__item {
+  .container-two__item, .container-eight__inner {
     flex-basis: 49%;
     margin-bottom: 30px;
   }
-  .container-two p, .container-eight p {
+  .container-two p {
     padding: 0;
   }
   .container-two__hover-content, .container-eight__hover-content {
@@ -300,6 +331,9 @@ p {
   }
   .container-four__advantages:nth-child(4) {
     border-bottom: 1px solid #e5e5e5;
+  }
+  .container-eight__hover-content {
+    left: 20%;
   }
 }
 
@@ -317,7 +351,7 @@ p {
   .container-one__content h2 {
     padding-bottom: 20px;
   }
-  .container-two__item, .container-eight__item {
+  .container-two__item, .container-eight__inner {
     flex-basis: 100%;
   }
   .container-two__hover-content, .container-eight__hover-content {
@@ -345,10 +379,16 @@ p {
     margin-left: -153px;
     width: 31%;
   }
+  .container-eight__hover-content {
+    left: 20%;
+  }
+  .container-eight__hover-content i {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 600px) {
-  .ontainer-two__item, .container-eight__item {
+  .ontainer-two__item, .container-eight__inner {
     width: 100%;
   }
   .container-three .center{
