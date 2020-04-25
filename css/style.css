@@ -329,7 +329,28 @@ p {
 }
 /* container-ten */
 .container-fourteen {
-
+  position: relative;
+}
+.container-fourteen__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+  background-image: url(../img/background-map.png);
+  text-align: center;
+}
+.container-fourteen__background img {
+  width: 20px;
+  margin-top: 57px;
+}
+.container-fourteen__background h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #f38181;
+  margin-top: 15px;
+}
+.container-fourteen__background .line {
+  margin-top: 20px;
 }
 #map {
   width: 100%;
