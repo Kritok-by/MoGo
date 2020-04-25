@@ -9,11 +9,15 @@ function initMap() {
         mapTypeId: 'satellite'
       },
       myMap = new google.maps.Map(document.getElementById('map'), opt),
-      markerImage = '../img/maps-and-flags.svg',
+      markerImage = {
+        url: 'img/maps-and-flags.svg',
+        size: new google.maps.Size(20, 26),
+        scaledSize: new google.maps.Size(20, 26)
+      },
       marker = new google.maps.Marker({
         position: pos,
         map: myMap,
-        // icon: markerImage,
+        icon: markerImage,
         animation: google.maps.Animation.BOUNCE
       })
 }
