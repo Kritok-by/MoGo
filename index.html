@@ -2,8 +2,9 @@
 <html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <title>MoGo</title>
 </head>
@@ -144,12 +145,78 @@
       </div>
     </section>
     <!-- Container-five -->
-    <section class="container-six">
-
+    <section class="container-six center container">
+      <h4>Service</h4>
+      <h3>WHAT WE DO</h3>
+      <i class="line"></i>
+      <p class="container-six__pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="row container-six__row justify-content-center">
+        <div class="container-six__img col-xl-6 col-lg-8 col-md-10">
+          <img src="./img/container-six-img.png" alt="img">
+        </div>
+        <div class="accordion container-six__text col-xl-6 col-lg-8 col-md-10" id="accordionExample">
+            <div class="card container-six__card">
+              <div class="card-header container-six__card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-outline-light container-six__card-subheader" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <div class="img-header">
+                        <img src="./img/picture-green.svg" alt="picture">
+                        <h5>PHOTOGRAPHY</h5>
+                      </div>
+                      <i class="fas fa-chevron-down" id="arrowDown"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse show container-six__collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body container-six__card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+              </div>
+            </div>
+            <div class="card container-six__card">
+              <div class="card-header container-six__card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn collapsed btn-outline-light container-six__card-subheader" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="img-header">
+                        <img src="./img/equalizer.svg" alt="picture">
+                        <h5>CREATIVITY</h5>
+                      </div>
+                      <i class="fas fa-chevron-down" id="arrowDown"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse container-six__collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body container-six__card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+              </div>
+            </div>
+            <div class="card container-six__card">
+              <div class="card-header container-six__card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn collapsed btn-outline-light container-six__card-subheader" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="img-header">
+                        <img src="./img/target.svg" alt="picture">
+                        <h5>WEB DESIGN</h5>
+                      </div>
+                      <i class="fas fa-chevron-down" id="arrowDown"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body container-six__card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+              </div>
+            </div>
+          </div>  
+      </div>
     </section>
     <!-- /.container-six -->
-    <section class="contsiner-seven">
-
+    <section class="container-seven">
     </section>
     <!-- /.contsiner-seven -->
     <section class="container-eight center">
@@ -207,24 +274,26 @@
     </section>
     <!-- /.container-eight -->
     <section class="container-nine">
-      <div class="center">
-        <div class="container-nine__label">
-          <img src="./img/img-1.png" alt="label">
-        </div>
-        <div class="container-nine__label">
-          <img src="./img/img-2.png" alt="label">
-        </div>
-        <div class="container-nine__label">
-          <img src="./img/img-3.png" alt="label">
-        </div>
-        <div class="container-nine__label">
-          <img src="./img/img-4.png" alt="label">
-        </div>
-        <div class="container-nine__label">
-          <img src="./img/img-5.png" alt="label">
-        </div>
-        <div class="container-nine__label">
-          <img src="./img/img-6.png" alt="label">
+      <div class="container center">
+        <div class="row">
+          <div class="col-xl-2 col-lg-4 col-sm-6">
+            <img src="./img/img-1.png" alt="label">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-sm-6">
+            <img src="./img/img-2.png" alt="label">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-sm-6">
+            <img src="./img/img-3.png" alt="label">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-sm-6">
+            <img src="./img/img-4.png" alt="label">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-sm-6">
+            <img src="./img/img-5.png" alt="label">
+          </div>
+          <div class="col-xl-2 col-lg-4 col-sm-6">
+            <img src="./img/img-6.png" alt="label">
+          </div>
         </div>
       </div>
     </section>
@@ -308,13 +377,52 @@
       </div>
     </section>
     <!-- conteiner-ten -->
-    <!-- <section class="container-fourteen">
-      <a href="https://goo.gl/maps/fX1QsR6kjUSj3CJC7">
-        <img src="./img/maps-and-flags.svg" alt="pin">
-        <h4>OPEN MAP</h4>
-        <i></i>
-      </a>
-    </section> -->
+    <section class="container-twalve">
+      <h4>What we do</h4>
+      <h3>STORY ABOUT US</h3>
+      <i class="line"></i>
+      <div class="container">
+        <div class="row">
+          <div class="media col-xl-6 col-lg-6 col-md-6 container-twalve__item">
+            <img src="./img/man-one.png" class="mr-3" alt="man">
+            <div class="media-body">
+              <h5>MATTHEW DIX</h5>
+              <p class="text">Graphic Design</p>
+              <i class="line"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
+          </div>
+          <div class="media col-xl-6 col-lg-6 col-md-6 container-twalve__item">
+            <img src="./img/man-two.png" class="mr-3" alt="man">
+            <div class="media-body">
+              <h5>NICK KARVOUNIS</h5>
+              <p class="text">Graphic Design</p>
+              <i class="line"></i>
+              <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+          </div>
+          <div class="media col-xl-6 col-lg-6 col-md-6 container-twalve__item">
+            <img src="./img/man-three.png" class="mr-3" alt="man">
+            <div class="media-body">
+              <h5>JAELYNN CASTILLO</h5>
+              <p class="text">Graphic Design</p>
+              <i class="line"></i>
+              <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+          </div>
+          <div class="media col-xl-6 col-lg-6 col-md-6 container-twalve__item">
+            <img src="./img/man-four.png" class="mr-3" alt="man">
+            <div class="media-body">
+              <h5>MIKE PETRUCCI</h5>
+              <p class="text">Graphic Design</p>
+              <i class="line"></i>
+              <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.container-twalve -->
     <section class="container-fourteen">
       <div id="map"></div>
         <div class="container-fourteen__background">
@@ -327,6 +435,9 @@
   </div>
   <script src="./js/script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFfJDa-1D2Z38wlsEP0YLyzv2B3p7kkq4&callback=initMap"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   
 </body>
 </html>

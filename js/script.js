@@ -1,7 +1,8 @@
 const background = document.querySelector('.container-fourteen__background');
+      arrowDown = document.getElementById('arrowDown');
+      buttonCollapse = document.querySelector('.container-six__card-subheader').getAttribute("aria-expanded");
 
-
-function initMap() {
+ function initMap() {
   var pos = {lat: -15.307911, lng: 124.261812},
       opt = {
         center: pos,
@@ -22,6 +23,17 @@ function initMap() {
       })
 }
 
+// if ()
+
 background.onclick = function() {
   background.style.display = 'none';
   };
+
+
+
+ function colAps() {
+    if (buttonCollapse === "true"){
+      arrowDown.style.transform = "rotate(180deg)"
+}};
+  
+  console.log(arrowDown);
