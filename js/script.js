@@ -1,6 +1,4 @@
 const background = document.querySelector('.container-fourteen__background');
-      arrowDown = document.getElementById('arrowDown');
-      buttonCollapse = document.querySelector('.container-six__card-subheader').getAttribute("aria-expanded");
 
  function initMap() {
   var pos = {lat: -15.307911, lng: 124.261812},
@@ -30,10 +28,20 @@ background.onclick = function() {
   };
 
 
+  //
 
- function colAps() {
-    if (buttonCollapse === "true"){
-      arrowDown.style.transform = "rotate(180deg)"
-}};
-  
-  console.log(arrowDown);
+
+
+    function arrow(evt, arrowRotate) {
+      var i, arrowIco, collButton;
+      arrowIco = document.getElementsByClassName("arrowDown");
+      for (i = 0; i < arrowIco.length; i++) {
+        arrowIco[i].style.transform = "rotate(0deg)";
+      }
+      collButton = document.getElementsByClassName("container-six__card-subheader");
+      for (i = 0; i < collButton.length; i++) {
+        collButton[i].className = collButton[i].className.replace(" active", "");
+      }
+      document.getElementById(arrowRotate).style.transform = "rotate(180deg)";
+      evt.currentTarget.className += " active";
+    }
