@@ -21,27 +21,9 @@ const background = document.querySelector('.container-fourteen__background');
       })
 }
 
-// if ()
-
 background.onclick = function() {
   background.style.display = 'none';
   };
 
 
-  //
-
-
-
-    function arrow(evt, arrowRotate) {
-      var i, arrowIco, collButton;
-      arrowIco = document.getElementsByClassName("arrowDown");
-      for (i = 0; i < arrowIco.length; i++) {
-        arrowIco[i].style.transform = "rotate(0deg)";
-      }
-      collButton = document.getElementsByClassName("container-six__card-subheader");
-      for (i = 0; i < collButton.length; i++) {
-        collButton[i].className = collButton[i].className.replace(" active", "");
-      }
-      document.getElementById(arrowRotate).style.transform = "rotate(180deg)";
-      evt.currentTarget.className += " active";
-    }
+  new WOW().init();
