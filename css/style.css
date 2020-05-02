@@ -403,8 +403,8 @@ p {
   text-align: center;
 }
 .container-nine img:hover {
-  animation: 0.5s 0s normal none running rot;
-  -webkit-animation: 0.5s  0s normal none running rot;
+  animation: rot 0.5s 0s normal none running;
+  -webkit-animation: rot 0.5s  0s normal none running;
 }
 /* container-nine */
 .container-ten {
