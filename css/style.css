@@ -142,7 +142,7 @@ p {
   text-align: center;
 }
 
-.container-two p, .container-eight p, .container-ten p, .container-six p {
+.container-two p, .container-eight p, .container-ten p, .container-six__pharagraph {
   display: block;
   padding: 0 10%;
   margin-top: 40px;
@@ -472,6 +472,8 @@ p {
 }
 .container-thirteen .card-deck {
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .container-thirteen__card {
   margin-top: 47px;
@@ -692,6 +694,25 @@ footer {
   .container-six__text {
     padding-left: 15px;
   }
+  .container-fiveteen {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+  }
+  .container-fiveteen .subscribe {
+    padding: 0;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-items: center;
+  }
+  .container-fiveteen .mail {
+    margin: auto;
+
+  }
+  .container-fiveteen .blogs {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -711,7 +732,7 @@ footer {
     flex-basis: 49%;
     margin-bottom: 30px;
   }
-  .container-two p, .container-eight p, .container-ten p {
+  .container-two p, .container-eight p, .container-ten p, .container-six__pharagraph {
     padding: 0;
   }
   .container-four__advantages-block,.container-ten__grid-cards {
@@ -778,11 +799,24 @@ footer {
   .container-eight__hover-content i {
     font-size: 34px;
   }
-  .container-ten__hover-content {
-    left: 24%;
-  }
   .container-twalve__item p {
     width: 100%;
+  }
+  .container-fiveteen {
+    text-align: center;
+  }
+  .container-thirteen .card-deck {
+    grid-template-columns: 1fr;
+  }
+  .container-fiveteen .subscribe {
+    grid-row: 1/2;
+  }
+  .container-fiveteen .blogs {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  } 
+  .container-fiveteen .instagram {
+    
   }
 }
 
@@ -804,9 +838,6 @@ footer {
   }
   .container-four__advantages {
     padding: 20px 0;
-  }
-  .container-ten__hover-content {
-    left: 18%;
   }
   .container-ten__hover-content h5{
     font-size: 12px;
