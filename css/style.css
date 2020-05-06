@@ -117,6 +117,7 @@
     margin-top: 150px;
     outline:none;
     text-align: left;
+    
   }
 
   .owl-theme .owl-dots .owl-dot::after {
@@ -149,6 +150,13 @@
   }
   .owl-theme .owl-dots .owl-dot:last-child::before {
     content: "04";
+  }
+  .owl-theme .owl-dots .owl-dot:hover, .owl-theme .owl-dots .owl-dot:focus {
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(to right, #f38181 25%, #fff 20%, #fff 100%);
+    -moz-border-image: -moz-linear-gradient(to right, #f38181 25%, #fff 20%, #fff 100%);
+    -webkit-border-image: -webkit-linear-gradient(to right, #f38181 25%, #fff 20%, #fff 100%);
+    border-image-slice: 1;
   }
   .owl-theme .owl-dots .owl-dot span {
     display: none;
