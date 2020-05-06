@@ -782,7 +782,6 @@
   .container-fiveteen .subscribe {
   padding-right:11%;
   }
-  
   .container-fiveteen .subscribe h3 {
   margin:0;
   font-size:46.5px;
@@ -853,8 +852,13 @@
   line-height:10px;
   font-weight:700;
   padding:14px 33px;
+  outline: none;
   }
-  
+  .container-fiveteen .mail button:hover ,.container-fiveteen .mail button:focus {
+    background-color:#fff;
+    color: #ccc;
+    outline: none;
+  }
   .container-fiveteen .blogs {
   display:grid;
   grid-template-columns:1fr;
@@ -958,6 +962,13 @@
   @media (max-width: 1024px) {
   h1 {
   font-size:110px;
+  }
+  .owl-theme .owl-dots .owl-dot::after {
+    font-size: 12px;
+
+  }
+  .owl-theme .owl-dots .owl-dot::before {
+    font-size: 18px;
   }
   
   .container-one__menu {
@@ -1129,10 +1140,24 @@
   }
   
   @media (max-width: 600px) {
-  .ontainer-two__item,.container-eight__inner {
+  .owl-theme .owl-dots .owl-dot::after {
+    display: none;
+  }
+  .owl-theme .owl-dots .owl-dot::before {
+    text-align: center;
+  }
+  .container-two__item,.container-eight__inner {
   width:100%;
   }
-  
+  .media {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .media div:first-child {
+    margin: 0;
+    margin-bottom: 20px;
+  }
   .container-three .center {
   grid-template-columns:1fr;
   border:none;
